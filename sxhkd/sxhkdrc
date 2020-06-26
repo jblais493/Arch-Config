@@ -1,0 +1,19 @@
+alt + Return
+	termite
+
+alt + Escape
+	pkill -USR1 -x sxhkd
+
+alt + space 
+	exec rofi -show drun
+	# dmenu_run
+
+alt + q 
+	bspc node -{c,k}
+
+shift + alt + {q,r}
+	bspc {quit,wm -r}
+
+
+super + {h,j,k,l}
+	bspc node -p {west,south,north,east}
